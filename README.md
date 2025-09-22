@@ -1,10 +1,13 @@
-# Teste
+# Instruções de uso
 
 Para clonar o repositório utilize o comando de git clone. Cada desafio está concluído em sua respectiva pasta.
 
 ### Desafio 1
 
-Foi criada uma API em NestJS com Swagger e uma rota /order
+Foi criada uma API em NestJS com Swagger
+A API possui apenas uma rota /orders, responsável por definir a forma de empacotar produtos.
+
+Além disso, também foram criados alguns testes automatizados para o controller. 
 
 ##### Execução docker desafio 1
 
@@ -16,11 +19,10 @@ Dentro da pasta, pode executar os comandos:
 Após concluir a etapa de build da imagem, podemos executá-la com:
 `docker run -p 3000:3000 packing-api`
 
-Obs: O comando "-p 3000" indica a porta de execução do container, podendo ser alterada como no exemplo abaixo.
-Ex: `docker run -p 3333:3000 packing-api`
-
 O serviço então estará pronto na porta escolhida em `http://localhost:3000/order` e o swagger estará rodando em `http://localhost:3000/api`
 
+Obs: A opção "-p 3000" indica a porta de execução do container, e pode ser alterada como no exemplo abaixo.
+Ex: `docker run -p 3333:3000 packing-api`
 
 ### Desafio 2
 
